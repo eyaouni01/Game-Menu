@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Menu</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="backgroundAudio" autoplay loop>
+    <source src="soundmain.mp3" type="audio/mp3">
+    Votre navigateur ne prend pas en charge l'audio au format MP3.
+  </audio>
+
+  <div class="scene">
+    <div class="bg-image"></div>
+   
+    <div class="menu">
+      <h1 class="titlee">Battle of Fareuen</h1>
+      <ul>
+        <li><a href="#">Nouvelle Partie</a></li>
+        <li><a href="#">Charger Partie</a></li>
+        <li><a href="#">Options</a></li>
+        <li><a href="#">Quitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Sélectionnez l'élément audio
+      const backgroundAudio = document.getElementById('backgroundAudio');
+      console.log(backgroundAudio,"hhhhhhhhhhhhhhhhh")
+      // Commencez la lecture de l'audio
+      backgroundAudio.play();
+      
+    });
+  </script>
+</body>
+</html>
